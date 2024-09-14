@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stopwatch-container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.display {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+.controls button {
+    font-size: 1.2rem; 
+    padding: 15px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#start-btn {
+    background: #28a745;
+    color: #fff;
+}
+
+#stop-btn {
+    background: #dc3545;
+    color: #fff;
+}
+
+#reset-btn {
+    background: #6c757d;
+    color: #fff;
+}
+
+.controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.controls button:not(:disabled):hover {
+    background: #0056b3;
+    transform: scale(1.05); 
+}
